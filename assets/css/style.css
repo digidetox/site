@@ -433,6 +433,7 @@ body {
     color: var(--white);
     font-size: var(--fs-8);
     margin-block-end: 30px;
+    text-align: justify;
 }
 
 
@@ -456,6 +457,7 @@ body {
 .about-text {
     font-size: var(--fs-8);
     margin-block-end: 20px;
+    text-align: justify;
 }
 
 .stats-list {
