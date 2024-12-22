@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Detox</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4afed70b33.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+            <a href="#">
+                <img class="logo" id="logo1" src="logo.png" alt="Astora">
+            </a>
+            <a href="#">
+                <h1 class="logo" id="logoText">
+                    DigiDetox</h1>
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="#" class="logo">DigiDetox</a>
+
+                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link" data-navbar-link>About</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#services" class="navbar-link" data-navbar-link>Services</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#features" class="navbar-link" data-navbar-link>Features</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#register" class="navbar-link" data-navbar-link>Registration</a>
+                    </li>
+
+                    <!-- <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-navbar-link>Contact Us</a>
+                    </li> -->
+
+                </ul>
+
+            </nav>
+            <a href="https://en.wikipedia.org/wiki/Digital_detox" target="_blank" rel="noopener noreferrer" class="btn">
+                <ion-icon name="globe-outline"></ion-icon>
+
+                <span>Read More</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="hero" id="home">
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <p class="hero-subtitle">...decided to assist you,</p>
+
+                        <h2 class="h2 hero-title" id="tagline">Unplug to Reconnect the minds...</h2>
+
+                        <p class="hero-text">
+                            Welcome to the Digital Detox, We believe in making this world free from digital outrush, Helping people to get out from daily digital activities to  make their valuable time only for them and well being.
+                        </p>
+
+                        <button class="btn" onclick="window.location.href='#services'">Learn more</button>
+
+                    </div>
+
+                    <!-- <figure class="hero-banner">
+                        <img src="./assets/images/merchandise1.png" width="694" height="529" loading="lazy" alt="hero-banner" class="w-100 banner-animation">
+                    </figure> -->
+
+                    <figure class="video-container">
+                        <p class="video-title" id="vt">Why We Need Digital Detox?</p>
+                        <iframe 
+        src="https://www.youtube.com/embed/LT3SMwSzjiw" 
+        title="Digital Detox Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+                    </figure>
+            
+
+                </div>
+            </section>
+
+            <section class="section register" id="register">
+                <style>
+                    .register-form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        padding: 20px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        max-width: 500px;
+                        margin: 0 auto;
+                        background-color: #f9f9f9;
+                    }
+            
+                    .form-group {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                    }
+            
+                    .form-group label {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #333;
+                    }
+            
+                    .form-group input,
+                    .form-group textarea {
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        width: 100%;
+                        font-family: inherit;
+                    }
+            
+                    .btn {
+                        padding: 10px 20px;
+                        margin-top: 10px;
+                        background-color: #087c61;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
+            
+                    .btn:hover {
+                        background-color: #065c48;
+                    }
+                </style>
+            
+                <div class="container">
+            
+                    <h2 class="h2 section-title underline">Register Here</h2>
+            
+                    <form action="#" method="POST" class="register-form">
+            
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="contact">Contact Number:</label>
+                            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Write your message here" rows="4"></textarea>
+                        </div>
+            
+                        <button type="submit" class="btn">Submit</button>
+            
+                    </form>
+            
+                </div>
+            </section>
+            
+
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about" id="about">
+                <div class="container">
+
+                    <figure class="about-banner">
+                        <img src="digi_about.png" width="700" height="532" loading="lazy" alt="about banner" class="w-100 banner-animation">
+                    </figure>
+
+                    <div class="about-content">
+
+                        <h2 class="h2 section-title underline">Why We?</h2>
+
+                        <p class="about-text">
+                          
+
+                            In today’s fast-paced world, we’re constantly surrounded by screens, notifications, and digital distractions. While technology makes life more convenient, it often leads to stress, burnout, and less time for meaningful moments. Digital Detox is here to help you step back, unplug, and focus on what truly matters—your health, happiness, and relationships.  
+                            
+                            Our mission is to help you reduce screen time, find balance, and reconnect with yourself and your loved ones. A digital detox isn’t about giving up technology completely; it’s about using it in a more mindful and healthy way.  
+                            
+                            With tools, tips, and personalized insights, our app makes it easy to take small but impactful steps toward a calmer, more balanced life. Whether it’s spending quality time offline, rediscovering hobbies, or simply finding moments of peace, Digital Detox is here to guide you toward a more fulfilling lifestyle.
+                        </p>
+
+                        <p class="about-text">
+                            Join us on this journey to disconnect from the noise and reconnect with what truly matters. Let’s create a world where your time, energy, and well-being come first. Together, we can embrace a healthier, happier, and more balanced way of living.
+                        </p>
+
+                        <ul class="stats-list">
+
+                            <li class="stats-card">
+                                <p class="h3 stats-title">2</p>
+
+                                <p class="stats-text">Services Launched</p>
+                            </li>
+
+                            <li class="stats-card">
+                                <p class="h3 stats-title">8</p>
+
+                                <p class="stats-text">Collaborations</p>
+                            </li>
+
+                            <li class="stats-card">
+                                <p class="h3 stats-title">122</p>
+
+                                <p class="stats-text">Delighted Clients</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #SERVICES
+      -->
+
+            <section class="section service" id="services">
+                <div class="container">
+
+                    <h2 class="h2 section-title underline">Our Services</h2>
+
+                    <ul class="service-list">
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="bulb-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 title">Digital Detox Kit</h3>
+
+                                <p class="text">
+                                    Our Digital Detox Kit is designed to help you kickstart your journey toward a healthier relationship with technology. Packed with practical tools and resources, it includes step-by-step guides, mindfulness exercises, and screen-time trackers to assist you in gradually reducing your digital dependency. 
+                                </p>
+
+                                <button class="card-btn" aria-label="Show More"><a href="mailto:support@digidetox.com" class="footer-item-link"><ion-icon name="mail-outline"></ion-icon></a>
+                </button>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="person-circle-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 title">Counseling</h3>
+
+                                <p class="text">
+                                    Breaking free from digital overload can feel overwhelming. Our counseling service provides personalized support from experts who understand the challenges of technology. Whether you’re struggling with screen addiction, social media anxiety, work - life imbalance, our counselors work with you to create a plan tailored to your needs.
+                                </p>
+
+                                <button class="card-btn" aria-label="Show More"><a href="mailto:support@digidetox.com" class="footer-item-link"><ion-icon name="mail-outline"></ion-icon></a>
+                                </button>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="desktop-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 title">Personalized Workspace</h3>
+
+                                <p class="text">
+                                    Say goodbye to distractions and hello to productivity with our Personalized Workspace feature. This service helps you customize your digital environment to support your goals and minimize unnecessary interruptions. Set up focus timers, block distracting apps or websites, and organize tasks in a way that aligns with your priorities.
+                                </p>
+
+                                <button class="card-btn" aria-label="Show More"><a href="https://wa.me/+917262051481" target="_blank" rel="noopener noreferrer" class="footer-item-link"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                                </button>
+
+                            </div>
+                        </li>
+                        <!-- <li>
+
+                        </li>
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="globe-outline"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 title">Web Engineering</h3>
+
+                                <p class="text">
+                                    Unlock the power of the web with Astora Syndicate's comprehensive Web Engineering. From business and e-commerce websites to political presence, our services encompass all aspects of web development. <br><br>Contact
+                                    us today by clicking the button below and let us make your digital dream a reality.
+                                </p>
+
+                                <button class="card-btn" aria-label="Show More"><a href="https://wa.me/919404419562" target="_blank" rel="noopener noreferrer" class="footer-item-link"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                                </button>
+
+                            </div>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #FEATURES
+      -->
+
+            <section class="section features" id="features">
+                <div class="container">
+
+                    <h2 class="h2 section-title underline">Our Features</h2>
+
+                    <ul class="features-list">
+
+                        <li>
+                            <div class="features-card">
+
+                                <div class="icon">
+                                    <ion-icon name="hourglass-outline"></ion-icon>
+                                </div>
+
+                                <div class="content">
+                                    <h3 class="h3 title">Break Reminders</h3>
+
+                                    <p class="text">
+                                        Get gentle prompts to step away from screens and recharge your mind throughout the day.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="features-card">
+
+                                <div class="icon">
+                                    <ion-icon name="desktop-outline"></ion-icon>
+                                </div>
+
+                                <div class="content">
+                                    <h3 class="h3 title">Screen-Time Goals</h3>
+
+                                    <p class="text">
+                                        Set and track personalized screen-time limits to build healthier digital habits.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <figure class="features-banner">
+                        <img src="./assets/images/features.png" width="369" height="318" loading="lazy" alt="Features Banner" class="w-100 banner-animation">
+                    </figure>
+
+                    <ul class="features-list">
+
+                        <li>
+                            <div class="features-card">
+
+                                <div class="icon">
+                                    <ion-icon name="bulb-outline"></ion-icon>
+                                </div>
+
+                                <div class="content">
+                                    <h3 class="h3 title">Focus Mode</h3>
+
+                                    <p class="text">
+                                        Block distracting apps and notifications to stay productive and focused on what matters.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="features-card">
+
+                                <div class="icon">
+                                    <ion-icon name="bar-chart-outline"></ion-icon>
+                                </div>
+
+                                <div class="content">
+                                    <h3 class="h3 title">Wellness Insights & Analytics</h3>
+
+                                    <p class="text">
+                                        Receive detailed reports on your digital usage and progress toward a more balanced lifestyle.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #BLOG
+      -->
+
+            <!-- <section class="section blog" id="blog">
+                <div class="container">
+
+                    <h2 class="h2 section-title underline">Our Annoucements</h2>
+
+                    <ul class="blog-list">
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="banner">
+                                    <a href="https://www.instagram.com/p/CpcgQoBr7aU/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/images/Astora_Internship1.jpeg" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                                    </a>
+                                </figure>
+
+                                <div class="content">
+
+                                    <h3 class="h3 title">
+                                        <a href="https://www.instagram.com/p/CpcgQoBr7aU/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+                                          Becoming an Intern as 'Media Coordinator'
+                    </a>
+                                    </h3>
+
+                                    <p class="text">
+                                        Astora Syndicate LLP is providing a special opportunity for young peoples for becoming an Intern as "Media Coordinator" for the periodical magazine named as 'Republic Pattern - 2023'.
+
+                                    </p>
+
+                                    <div class="meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="2022-03-07">6 March, 2023</time>
+                                        </div> -->
+
+                                        <!-- <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15"></data>
+                    </button>
+
+                                        <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button> -->
+
+                                    <!-- </div>
+
+                                </div>
+
+                            </div>
+                        </li> -->
+
+                        <!-- <li>
+                            <div class="blog-card">
+
+                                <figure class="banner">
+                                    <a href="#">
+                                        <img src="./assets/images/blog-2.jpg" width="750" height="350" loading="lazy" alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                                    </a>
+                                </figure>
+
+                                <div class="content">
+
+                                    <h3 class="h3 title">
+                                        <a href="#">
+                      Quisque egestas iaculis felis eget placerat ut pulvinar mi.
+                    </a>
+                                    </h3>
+
+                                    <p class="text">
+                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac imperdiet.
+                                    </p>
+
+                                    <div class="meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="2022-03-07">7 March, 2022</time>
+                                        </div>
+
+                                        <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                                        <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="banner">
+                                    <a href="#">
+                                        <img src="./assets/images/blog-3.jpg" width="750" height="350" loading="lazy" alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                                    </a>
+                                </figure>
+
+                                <div class="content">
+
+                                    <h3 class="h3 title">
+                                        <a href="#">
+                      Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere.
+                    </a>
+                                    </h3>
+
+                                    <p class="text">
+                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac imperdiet.
+                                    </p>
+
+                                    <div class="meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="2022-03-07">7 March, 2022</time>
+                                        </div>
+
+                                        <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                                        <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="banner">
+                                    <a href="#">
+                                        <img src="./assets/images/blog-4.jpg" width="750" height="350" loading="lazy" alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                                    </a>
+                                </figure>
+
+                                <div class="content">
+
+                                    <h3 class="h3 title">
+                                        <a href="#">
+                      Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis.
+                    </a>
+                                    </h3>
+
+                                    <p class="text">
+                                        Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac imperdiet.
+                                    </p>
+
+                                    <div class="meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="2022-03-07">7 March, 2022</time>
+                                        </div>
+
+                                        <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                                        <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li> -->
+
+                        <!-- <li>
+                            <div class="blog-card">
+
+                                <figure class="banner">
+                                    <a href="https://open.spotify.com/episode/7iALiVbZXMu7hQCzwtKovB?si=9292c78764294c04" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/images/Podcast_RRP_Spotify.png" width="750" height="350" loading="lazy" alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                                    </a>
+                                </figure>
+
+                                <div class="content">
+
+                                    <h3 class="h3 title">
+                                        <a href="https://open.spotify.com/episode/7iALiVbZXMu7hQCzwtKovB?si=9292c78764294c04" target="_blank" rel="noopener noreferrer">
+                                          Astora Studio Launches 'Heart-to-Heart' Podcast on Spotify
+                    </a>
+                                    </h3>
+
+                                    <p class="text">
+                                        Join us on this enthralling journey as we connect hearts, bridge perspectives, and celebrate the soul of Maharashtra. Welcome to 'Heart-to-Heart' on Spotify, where India's spirit beats in every episode.
+
+                                    </p>
+
+                                    <div class="meta">
+
+                                        <div class="publish-date">
+                                            <ion-icon name="time-outline"></ion-icon>
+
+                                            <time datetime="2022-03-07">16 June, 2023</time>
+                                        </div> -->
+
+                                        <!-- <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15"></data>
+                    </button>
+
+                                        <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button> -->
+
+                                    <!-- </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main> -->
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-top section">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#">
+                        <img class="logo" id="logo2" src="footer_png.png" alt="Astora">
+                    </a>
+                    <!-- <a href="#">
+                        <h1 class="logo" id="logoText">
+                        </h1>
+                    </a> -->
+
+                    <p class="text">
+                        Unplug from the digital world, reconnect with yourself, and embrace a balanced life.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="https://www.linkedin.com/company/astorasyndicate..../" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/astora_syn..../" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://wa.me/919404419562...." target="_blank" rel="noopener noreferrer" class="social-link">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Our links</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="footer-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="footer-link">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#features" class="footer-link">Features</a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="#blog" class="footer-link">Announcements</a>
+                    </li> -->
+
+                </ul>
+
+                <!-- <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Our Services</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Strategy & Research</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Web Development</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Web Solution</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Digital Marketing</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">App Design</a>
+                    </li>
+
+                </ul> -->
+
+                <!-- <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Other links</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Support</a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html" class="footer-link">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="footer-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html" class="footer-link">Terms & Conditions</a>
+                    </li>
+
+                </ul> -->
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact Us</p>
+                    </li>
+
+                    <li class="footer-item">
+
+                        <div class="footer-item-icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+
+                        <div>
+                            <a href="tel:+919404419562" class="footer-item-link">+91 7262051481</a>
+                        </div>
+
+                    </li>
+
+                    <li class="footer-item">
+
+                        <div class="footer-item-icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </div>
+
+                        <div>
+                            <a href="mailto:support@astorasyndicate.com" class="footer-item-link">support@digidetox.com</a>
+                            <a href="mailto:publishing@astorasyndicate.com" class="footer-item-link">publishing@digidetox.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="footer-item">
+
+                        <div class="footer-item-icon">
+                            <ion-icon name="location"></ion-icon>
+                        </div>
+                        <a><address>Maharashtra, India</address></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright"> Copyright &copy; 2024 Digital Detox Ltd.
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        // Attach event listener to the form
+        document.querySelector('.register-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Display success message
+            const successMessage = document.createElement('p');
+            successMessage.textContent = "Successfully Registered!";
+            successMessage.style.color = "green";
+            successMessage.style.marginTop = "10px";
+            successMessage.style.textAlign = "center";
+    
+            // Append message only if not already displayed
+            if (!document.querySelector('.register-form p.success-message')) {
+                successMessage.classList.add('success-message');
+                this.appendChild(successMessage);
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>
