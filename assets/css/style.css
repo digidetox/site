@@ -185,6 +185,16 @@ body {
     background-color: hsl(0, 0%, 70%);
 }
 
+form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    font-family: inherit;
+    background-color: #f9f9f9;
+}
+
 
 /*-----------------------------------*\
   #REUSED STYLE
